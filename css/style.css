@@ -24,7 +24,8 @@
 }
 
 header {
-    background-image: url(../images/header/header_photo.jpg);
+    /* background-image: url(../images/header/header_photo.jpg); */
+    background-image: url(../images/header/1456hinh-nen-nhung-chiec-banh-ngot-hap-dan.jpg);
     width: 100%;
     background-size: cover;
     padding-top: 30%;
