@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    margin-bottom: 5%;
+    background: url(../images/order/orderbackgroundImg.png);
+    background-image: url('https://c.tenor.com/JitGq8Syvz8AAAAC/chocolate-sweet.gif');
+    background-size: cover;
+    background-position: 100%;
+    color: white;
+}
+
+.order-form {
+    margin: auto;
+    padding: 1%;
+    border: 5px solid brown;
+    border-radius: 40px;
+    background-color: rgba(130, 163, 8, 0.8);
+    box-shadow: 0 0 6px 4px brown;
+    width: 60%;
+    min-height: 75vh;
+}
+
+/* header h1 {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Bowlby One', cursive;
+    font-size: 45px;
+    color: rgb(117, 22, 22);
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+} */
+
+.form-label {
+    width: 20%;
+    color: wheat;
+}
+
+.formgroup {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.form-size {
+    width: 50%;
+}
+
+.include-node {
+    display: block;
+}
+
+.cake {
+    display: block;
+}
+
+.cake1 {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* .form-submit {
+    width: 160px;
+    height: 45px;
+    margin-left: 70%;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: red;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+.form-submit {
+    margin: auto;
+    display: block !important;
+    width: 50%;
+    color: #fff !important;
+}
+
+.glow {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Bowlby One', cursive;
+    font-style: italic;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.radiobox {
+    display: flex;
+}
+
+.order-form {
+    background-image: url('./orderform.png');
+    background-size: cover;
+}
+
+p {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/* input[type="radio"] {
+    width: 15px;
+} */
+
+@media (min-width: 571px) and (max-width: 768px) {
+    .order-form {
+        width: 80%;
+    }
+
+    .form-label {
+        width: 30%;
+        color: wheat;
+    }
+
+    .form-label,
+    .form-size,
+    p {
+        font-size: 15px;
+    }
+
+    .form-label {
+        color: wheat;
+    }
+
+    .order-form {
+        background-image: url('http://file.hstatic.net/1000396324/article/cach-lam-banh-socola-tan-chay-1_ac6396aa6df44514b0292e11272bc07e_1024x1024.jpg');
+        background-size: cover;
+    }
+
+    .check {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+}
+
+@media (max-width: 570px) {
+    .formgroup {
+        display: block;
+    }
+
+    .form-label,
+    .form-size {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn-outline-info {
+        width: 80%;
+    }
+
+    .order-form {
+        width: 80%;
+    }
+
+    .order-form {
+        background-image: url('http://file.hstatic.net/1000396324/article/cach-lam-banh-socola-tan-chay-1_ac6396aa6df44514b0292e11272bc07e_1024x1024.jpg');
+        background-position: center;
+    }
+
+    .check {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="./css/form/order.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="glow">Order Now</h1>
+    </header>
+    <div class="order-form">
+        <form id="order" action="post">
+            <div class="formgroup">
+                <div class="form-label">Cake name:</div>
+                <div class="info form-size">
+                    <select class="w-100" id="myselect">
+                        <option value="">---Select cake---</option>
+                        <option value="">Classic Yellow Cake</option>
+                        <option value="">Coconut Bunt Cake</option>
+                        <option value="">Cream Cheese Pound Cake</option>
+                        <option value="">German Chocolate Cake</option>
+                    </select>
+                    <p style="color:#be0d0d;" class="error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="name-form">
+                <div class="form-label">Your name</div>
+                <div class="info form-size">
+                    <input class="w-100" type="text" id="name" name="name" class="name"
+                        placeholder="Nhập tên của bạn" />
+                    <p style="color:#be0d0d;" class="text-error-message error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="message-form">
+                <div class="form-label">Message:</div>
+                <div class="info form-size">
+                    <input class="w-100" type="text" id="message" name="message" class="message"
+                        placeholder="type on text that writes on the cake.." />
+                    <p style="color:#be0d0d;" class="text-error-message error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="include-form">
+                <div class="form-label">Includes:</div>
+                <div class="info form-size">
+                    <div class="cake">
+                        <div class="cake1">
+                            <input class="include-node" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                            <div class="form-label">Candle</div>
+                        </div>
+                        <div class="cake1">
+                            <input class="include-node" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                            <div class="form-label">Firework</div>
+                        </div>
+                        <div class="cake1">
+                            <input class="include-node" type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                            <div class="form-label">Toys</div>
+                        </div>
+                    </div>
+                    <p style="color:#be0d0d;" class="error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="deliverdate-form">
+                <div class="form-label">Deliver date:</div>
+                <div class="info form-size">
+                    <input class="w-100" type="date" id="start" name="trip-start" value="" min="2018-09-13"
+                        max="2023-12-31" placeholder="mm/dd/yyyy">
+                    <p style="color:#be0d0d;" class="error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="deliverto-form">
+                <div class="form-label">Deliver to:</div>
+                <div class="info form-size">
+                    <textarea id="deliverto" name="deliverto" class="w-100"></textarea>
+                    <p style="color:#be0d0d;" class="text-error-message error-message"></p>
+                </div>
+            </div>
+            <div class="formgroup" id="callbefore-form">
+                <div class="form-label">Call before deliver:</div>
+                <div class="info form-size">
+                    <div class="radiobox">
+                        <input class="" type="radio" name="agree" value="yes">
+                        <div class="check form-label"> Yes</div>
+                    </div>
+                    <div class="radiobox">
+                        <input class="" type="radio" name="agree" value="no">
+                        <div class="check form-label"> No</div>
+                    </div>
+                    <p style="color:#be0d0d;" class="error-message"></p>
+                </div>
+            </div>
+            <input class="btn btn-outline-info form-submit font-effect-fire" type="submit" value="Order Now" />
+        </form>
+    </div>
+    <script language="javascript" src="./javascript/order.js"></script>
+</body>
+
+</html>
