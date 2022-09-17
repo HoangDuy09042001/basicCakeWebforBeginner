@@ -9,7 +9,7 @@
 body {
     margin-bottom: 5%;
     background: url(../images/order/orderbackgroundImg.png);
-    background-image: url('https://c.tenor.com/JitGq8Syvz8AAAAC/chocolate-sweet.gif');
+    background-image: url('https://chupanh.vn/wp-content/uploads/2017/12/concept-chup-anh-mon-an-chum-anh-banh-ngot-nhin-la-me-ma00133.jpg');
     background-size: cover;
     background-position: 100%;
     color: white;
@@ -98,10 +98,10 @@ body {
     text-align: center;
     font-family: 'Bowlby One', cursive;
     font-style: italic;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: kiss 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@-webkit-keyframes kiss {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }

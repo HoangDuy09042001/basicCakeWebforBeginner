@@ -1,17 +1,11 @@
-const menuBtns = document.querySelectorAll('.menu ul>li');
-for (const menuBtn of menuBtns) {
-    menuBtn.addEventListener('mouseover', () => {
-        menuCurrentFire = document.querySelector('.font-effect-fire')
-        menuCurrentFire.classList.remove('font-effect-fire')
-        menuBtn.classList.add('font-effect-fire')
-    })
-}
-var header = document.getElementById('header');
-var mobileMenu = document.getElementById('mobile-menu');
-var headerHeight = header.clientHeight;
+let header = document.getElementById('header');
+let mobileMenu = document.getElementById('mobile-menu');
+let headerHeight = header.clientHeight;
 // Mở Menu 
 mobileMenu.addEventListener('click', () => {
-    var isClosed = header.clientHeight === headerHeight;
+    let isClosed = header.clientHeight === headerHeight;
+    let menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    console.log(menuItems)
     if (isClosed) {
         header.style.height = 'auto';
     } else {
@@ -20,7 +14,7 @@ mobileMenu.addEventListener('click', () => {
 })
 
 // Tự động đóng khi chọn Menu 
-var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+let menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 console.log(menuItems)
 
 menuItems.forEach(item => {

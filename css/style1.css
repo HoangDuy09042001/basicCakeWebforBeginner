@@ -1,0 +1,230 @@
+* {
+    font-family: 'Dancing Script', cursive;
+}
+
+.photo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.photo:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.description {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.main {
+    text-align: justify;
+}
+
+/* header {
+    background-image: url(../images/header/1456hinh-nen-nhung-chiec-banh-ngot-hap-dan.jpg);
+    width: 100%;
+    background-size: cover;
+    padding-top: 30%;
+    background-position: center;
+} */
+
+.hk {
+    background-size: cover;
+    padding-top: 30%;
+    background-position: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10% !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+/* header h1 {
+    width: inherit;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 600;
+    color: antiquewhite;
+    font-size: 60px;
+    word-spacing: 40px;
+} */
+
+.menu {
+    background-color: #333;
+}
+
+.menu ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding-left: 0;
+    display: flex;
+    margin-top: 0;
+}
+
+.menu ul>li {
+    width: 20%;
+    list-style-type: none;
+    font-size: 40px;
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+}
+
+.menu ul>li:hover {
+    height: auto;
+}
+
+
+.menu .product {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.menu .product ol {
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu .product li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu .product:hover {
+    overflow: visible;
+}
+
+.menu .product ol:hover {
+    background-color: aliceblue;
+}
+
+.menu .product div {
+    line-height: 75px;
+}
+
+.menu .product div:hover {
+    background-color: #333;
+}
+
+.menu .product li:hover {
+    color: #333;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.textdecorate {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.carousel-caption p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+@keyframes pulsate {
+
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #f09,
+            0 0 80px #f09,
+            0 0 90px #f09,
+            0 0 100px #f09,
+            0 0 150px #f09;
+
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 18px #fff,
+            0 0 38px #f09,
+            0 0 73px #f09,
+            0 0 80px #f09,
+            0 0 94px #f09,
+            0 0 140px #f09;
+
+    }
+}
+
+.navbar__form {
+    margin: 0 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    h1.glow {
+        font-size: 50px;
+        word-spacing: 20px;
+    }
+
+    header {
+        background-image: url('../images/header/header_photo-responsive.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+
+    h2 {
+        font-size: 20px;
+        margin: 3px 0;
+        word-spacing: 1px;
+    }
+
+    .textdecorate {
+        font-size: 80px;
+    }
+
+    .carousel-caption p {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .glow {
+        display: none;
+    }
+
+    #header,
+    #nav {
+        height: 30px;
+    }
+
+    header {
+        background-image: url('https://startuanit.net/wp-content/uploads/2021/06/hinh-nen-banh-kem-cho-may-tinh-24.jpg');
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 0rem !important;
+    }
+}

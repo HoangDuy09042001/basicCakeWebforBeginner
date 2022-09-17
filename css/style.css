@@ -137,7 +137,7 @@ header h1 {
     }
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -147,7 +147,7 @@ header h1 {
     .navbar-nav>li {
         width: 20%;
     }
-} */
+}
 
 
 #header {
